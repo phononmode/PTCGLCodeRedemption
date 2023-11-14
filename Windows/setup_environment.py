@@ -8,7 +8,7 @@ def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 def download_webdriver():
-    edge_driver_url = "https://msedgedriver.azureedge.net/119.0.2151.58/edgedriver_win64.zip"
+    edge_driver_url = "https://msedgedriver.azureedge.net/119.0.2151.58/edgedriver_win64.zip"    #replace with version compatible edge driver
     edge_driver_zip = "edgedriver_win64.zip"
     urllib.request.urlretrieve(edge_driver_url, edge_driver_zip)
     
